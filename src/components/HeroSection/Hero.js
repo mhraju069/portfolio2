@@ -1,6 +1,5 @@
 import React from 'react'
 import LaserFlow from './LaserFlow';
-import Shuffle from '../text/shuffle';
 import './Hero.css'; // <-- add custom styles here
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
@@ -29,33 +28,8 @@ export default function Hero() {
             />
 
             <div className="hero-content" style={{ position: 'absolute', zIndex: 1, }}>
-                <Shuffle
-                    text="Hi, I'm Raju"
-                    tag="p"
-                    shuffleDirection="left"
-                    duration={0.4}
-                    shuffleTimes={2}
-                    animationMode="evenodd"
-                    ease="power2.out"
-                    stagger={0.05}
-                    triggerOnce={true}
-                    className="hero-subtitle"
-                />
-                <Shuffle
-                    text="Blockchain Developer"
-                    tag="h1"
-                    shuffleDirection="right"
-                    duration={0.45}
-                    animationMode="evenodd"
-                    shuffleTimes={2}
-                    ease="power3.out"
-                    stagger={0.04}
-                    threshold={0.2}
-                    triggerOnce={true}
-                    className="hero-title"
-                />
-
-
+                <p className="hero-subtitle">Hi, I'm Raju</p>
+                <h1 className="hero-title">Blockchain Developer</h1>
 
                 <p className="hero-desc">
                     Building decentralized applications that revolutionize industries.
@@ -77,7 +51,7 @@ export default function Hero() {
                     <a href="https://github.com/mhraju069" target="_blank" rel="noopener noreferrer">
                         <FaGithub />
                     </a>
-                    <a href="https://linkedin.com/in/mhraju69" target="_blank" rel="noopener noreferrer">
+                    <a href="https://linkedin.com/in/mhraju069" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                     </a>
                 </div>
